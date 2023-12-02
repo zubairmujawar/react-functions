@@ -49,6 +49,12 @@
   padding: 2em;
 }
 
+.list-item{
+  border: 1px solid red;
+  padding: 6px;
+  margin: 8px;
+}
+
 .read-the-docs {
   color: #888;
 }
