@@ -1,8 +1,9 @@
-const Items = (props) => {
+const Items = ({foodItem}) => {
 
   return (
+
     <div className="">
-      <p className="list-item">{props.Moto}</p>
+      <p key={foodItem} className="list-item">{foodItem}</p>
     </div>
   );
 };

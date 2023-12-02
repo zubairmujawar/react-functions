@@ -1,14 +1,15 @@
-import React from "react";
 import Items from "./Items";
-const FoodItems = (Moto) => {
-  const food = ["Zubair", "Zaid", "Rahul", "Kumar", "Raju"];
+
+const FoodItems = () => {
+  const food = ["Rice", "Biryani", "polao", "Kheema pav", "Dal", "wheat", "Milk"];
 
   return (
     <div className="container">
-      <h1>list of students</h1>
+      <h1>List of Foods</h1>
       {
-      food.map((Ghee) => (
-        <Items Moto={Ghee} key={Ghee} /> // reciving name should be same
+        
+      food.map((name) => (                
+        <Items foodItem={name} key={name} /> // props reciving name should be same
         ))
       }
     </div>
