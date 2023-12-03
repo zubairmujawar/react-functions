@@ -81,7 +81,7 @@
   transform: scale(1.02); /* Increase the scale on hover for a zoom effect */
 }
 .cardDiv{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 12px;
   display: flex;
   /* align-items: center; */

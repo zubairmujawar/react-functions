@@ -15,13 +15,13 @@ const Card = () => {
         const data = await response.json(); //Error: TypeError: photos.map is not a function, photos is not an array use if-else
 
         if (Array.isArray(data.blogs)) {
-          //Data received from the API is not an array it is object
+          //Data received from the API is not an array, it is object
           setphotos(data.blogs);
         } else {
           console.error("Data received from the API is not an array:", data);
         }
       } catch (error) {
-        console.log("Datat error", error);
+        console.log("Data error", error);
       } finally {
         setloading(false);
       }
@@ -36,7 +36,7 @@ const Card = () => {
           <img src="https://i.gifer.com/origin/b1/b128497bc8d6fcfefb93b88b260561a7_w200.gif" />
         ) : (
           photos.map((blog) => (
-            <div className="imgDiv">
+            <div className="imgDiv" key={blog.id}>
               <h3 className="title">{blog.title}</h3>
               <img src={blog.photo_url} />
               <p>{blog.description}</p>
