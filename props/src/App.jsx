@@ -13,12 +13,12 @@ function App() {
   return (
     <>
     {/*as name of array is food, but we use as other name i.e =>item, use in other file eg. FoodItems.jsx */}
-    <FoodItems item={food}/> 
+    {/* <FoodItems item={food}/>  */}
     {/* <Calculator/> */}
     {/* <Clock/> */}
     {/* <AllCards/> */}
     {/* <Card/> */}
-    {/* <AllPhotos/> */}
+    <AllPhotos/>
     </>
   )
 }
