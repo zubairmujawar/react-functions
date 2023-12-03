@@ -3,7 +3,6 @@ import Calculator from "./Components/Calculetor"
 import Clock from './Components/Clock'
 import Items from './Components/Items'
 import FoodItems from './Components/FoodItems'
-import AllCards from './Components/AllCards'
 import Card from './Components/Card'
 import AllPhotos from './Components/AllPhotos'
 
@@ -16,7 +15,6 @@ function App() {
     {/* <FoodItems item={food}/>  */}
     {/* <Calculator/> */}
     {/* <Clock/> */}
-    {/* <AllCards/> */}
     {/* <Card/> */}
     <AllPhotos/>
     </>

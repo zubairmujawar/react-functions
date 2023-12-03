@@ -1,28 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.main-container{
+.main-container {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
 }
-.container{
+.container {
   border: 2px solid black;
   padding: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.container-btn{
+.container-btn {
   border: 1px solid black;
   padding: 12px;
   max-width: 222px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;  
-
+  flex-wrap: wrap;
 }
 .button {
   border-radius: 8px;
@@ -40,7 +39,7 @@
   border-color: #000000;
   background-color: #818181;
 }
-.input{
+.input {
   padding: 8px;
   margin: 8px;
   font-size: 1rem;
@@ -53,7 +52,7 @@
   padding: 2em;
 }
 
-.list-item{
+.list-item {
   border: 1px solid red;
   padding: 6px;
   margin: 8px;
@@ -63,11 +62,17 @@
   color: #888;
 }
 
-.imgDiv{
+.imgDiv {
   width: 30rem;
   /* min-height: 18rem; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px;
 }
 .imgDiv img {
   max-width: 100%;
@@ -77,10 +82,10 @@
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
-.imgDiv img:hover{
+.imgDiv img:hover {
   transform: scale(1.02); /* Increase the scale on hover for a zoom effect */
 }
-.cardDiv{
+.cardDiv {
   /* border: 2px solid black; */
   padding: 12px;
   display: flex;
@@ -88,6 +93,24 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.title{
+.title {
   margin: 5px;
+}
+.download-btn {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: #2196f3;
+  border-radius: 15px;
+  margin: 8px;
+  box-shadow: 5px;
+  /* margin: 8px 8px 3px 8px; */
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  float: right;
+  font-family: "poppins";
+}
+.download-btn:hover{  
+  color: white;
+  background-color: rgb(14, 80, 134);
 }
