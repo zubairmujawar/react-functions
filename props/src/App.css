@@ -64,62 +64,30 @@
 }
 
 .imgDiv{
-  width: 12rem;
-  height: 18rem;
-  border: 1px solid red;
+  width: 30rem;
+  /* min-height: 18rem; */
+  /* border: 1px solid red; */
   margin: 20px;
 }
-.imgDiv img{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  
+.imgDiv img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
-.imgDiv img:hover{
-  width: 110%;
-  height: 100%;
-  transform: translate(0.3cm, 0.3cm);
-  transition:0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) ;
 
+.imgDiv img:hover{
+  transform: scale(1.02); /* Increase the scale on hover for a zoom effect */
 }
 .cardDiv{
   border: 2px solid black;
   padding: 12px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-/* App.css (or your preferred CSS file) */
-/* .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.title{
+  margin: 5px;
 }
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-p {
-  margin: 10px 0 0;
-  color: #666;
-} */
