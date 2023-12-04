@@ -11,6 +11,7 @@ const AllPhotos = () => {
         const data = await response.json()
         if(Array.isArray(data.photos)){
           setphotos(data.photos)
+          
         }else{
           console.log(error, "error from api")
         }
