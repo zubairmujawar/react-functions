@@ -1,24 +1,29 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Input from "./Input";
+
 const Todo = () => {
-    // const [todo, settodo] = useState([])
-    let todo = ["this is a todo", "this is a todo", "this is a todo","this is a todo"]
+  const [todo, settodo] = useState([]);
+  //todo app refrence KG codding 5h:50min:23sec
+
+  const KeyDown = (e) => {
+    if (e.key === "Enter") {
+      let Item = e.target.value;
+      e.target.value = "";
+      let newItem = [Item, ...todo];
+      settodo(newItem);
+    }
+  };
   return (
     <MainContainer>
-      <input
-        type="text"
-        name=""
-        // value={todo}
-        id="input"
-        placeholder="your todo.."
-        className="todoInput"
-      />
+      <Input handelKeyDown={KeyDown} />
       <div className="liDiv">
-        {
-            // todo.map(()=><li>This is a todo</li>)
-        }
-        <button>Delete</button>
-        
+        {todo?.map((item) => (
+          <li key={item}>
+            {item}
+            <button className="btn">Delete</button>
+          </li>
+        ))}
       </div>
     </MainContainer>
   );
@@ -44,11 +49,11 @@ const MainContainer = styled.div`
   }
   .liDiv {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
   }
   .liDiv li {
     border: 1px solid red;
@@ -56,17 +61,16 @@ const MainContainer = styled.div`
     margin: 10px;
   }
   .liDiv button {
-    border: 1px solid black;
-    padding: 6px;
+    /* border: 1px solid black; */
+    float: right;
+    padding: 10px;
+    font-size: 15px;
     background-color: #2196f3;
     border-radius: 5px;
-    margin: 3px;
+    text-align: center;
+    margin: 3px 10px;
     height: 40px;
-    box-shadow: 5px;
-    /* font-size: 20px; */
-    /* font-weight: 400; */
     cursor: pointer;
-    /* float: right; */
     font-family: "poppins";
   }
 `;

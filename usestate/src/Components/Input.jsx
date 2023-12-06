@@ -1,9 +1,15 @@
 import React from "react";
 
-const Input = () => {
+const Input = ({ handelKeyDown }) => {
   return (
     <div>
-      <input type="text" name="" id="" />
+      <input
+        type="text"
+        id="input"
+        placeholder="write todo.."
+        onKeyDown={handelKeyDown}
+        className="todoInput"
+      />
     </div>
   );
 };
