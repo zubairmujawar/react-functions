@@ -14,9 +14,10 @@ const Todo = () => {
       settodo(newItem);
     }
   };
+
   return (
     <MainContainer>
-      <Input handelKeyDown={KeyDown} />
+      <Input />
       <div className="liDiv">
         {todo?.map((item) => (
           <li key={item}>
