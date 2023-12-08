@@ -3,9 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-.cantainer {
+.mainCantainer {
   width: 100vw;
   min-height: 100vh;
+  border: 2px solid black;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cantainer {
   border: 2px solid black;
   background-color: aliceblue;
   display: flex;
@@ -41,6 +48,17 @@
   margin: 12px;
   display: flex;
   max-width: 13rem;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.inputDiv {
+  /* border: 1px solid red; */
+  padding: 16px;
+  margin: 12px;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-start;

@@ -2,8 +2,8 @@ import React from "react";
 
 const Button = ({onBtnClicked }) => {
   const buttonName = [
-    "*",
     "C",
+    "*",
     "/",
     "7",
     "8",

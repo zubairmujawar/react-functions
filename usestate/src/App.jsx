@@ -1,11 +1,11 @@
 import './App.css'
-import Calc from './Components/Calculator/Calc'
+import MainTodo from './Components/TodoDate/MainTodo'
 
 function App() {
 
   return (
     <>
-      <Calc/>
+      <MainTodo/>
     </>
   )
 }
