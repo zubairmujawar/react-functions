@@ -1,0 +1,18 @@
+@import "colors";
+
+.home {
+  color: wheat;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.productdiv {
+  display: flex;
+  gap: 1rem;
+  margin: 0.8rem;
+  padding: 1rem;
+  border: 2px solid red;
+}

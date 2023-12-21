@@ -1,0 +1,41 @@
+@import "colors";
+
+nav {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+
+  h2{
+    text-transform: uppercase;
+    color: $primary;
+
+  }
+  >div{
+    display: flex;
+    align-items: center;
+    >a{
+        color: $primary;
+        font-size: 1.2rem;
+        margin: 0 1rem;
+        font-weight: 400;
+        transition: transform 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+        >p {
+            position: absolute;
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font: 900 0.7rem "Roboto";
+            display: flex;
+            text-align: center;
+            align-items: center;
+            place-items: center;
+            transform: translate(80%, -80%);
+        }
+    }
+  }
+}

@@ -6,6 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Hearder />
+      {/* <Home/> */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

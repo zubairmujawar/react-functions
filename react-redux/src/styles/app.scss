@@ -4,13 +4,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: "Roboto", sans-serif;
   text-decoration: none;
 }
 @import "colors";
 @import "hearder";
+@import "home";
+@import "productcard";
 
-body{
+body {
   background: $primary;
+  width: 100vw;
+  min-height: 100vh;
   color: #ffff;
+  font-size: "Roboto", sans-serif;
+}
+.btn {
+  margin: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s;
+  &:hover {
+    background: $secondry;
+  }
 }
