@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ name, id, price, handler, imgsrc }) => {
   return (
-    <di className="productcard">
+    <div className="productcard">
       <img src={imgsrc} alt="img" className="img" />
       <p>{name}</p>
       <h4 className="h4">${price}</h4>
@@ -12,7 +12,7 @@ const ProductCard = ({ name, id, price, handler, imgsrc }) => {
       >
         Add to cart
       </button>
-    </di>
+    </div>
   );
 };
 export default ProductCard;

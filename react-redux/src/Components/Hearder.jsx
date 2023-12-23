@@ -9,7 +9,7 @@ export const Hearder = () => {
 
       <div>
         <Link to="/">Home</Link>
-        <Link to="/card">
+        <Link to="/cart">
           <FaShoppingCart />
           <p>{"0"}</p>
         </Link>

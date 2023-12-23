@@ -1,0 +1,89 @@
+@import "colors";
+.cart {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+
+  > main {
+    padding: 2rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    > h1 {
+      color: white;
+      font: 100 2rem "Roboto";
+    }
+  }
+  > aside {
+    border-radius: 100px 0 0 100px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.182);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    > h2 {
+      margin: 1rem;
+      font: 100 1.8rem "Roboto";
+      letter-spacing: 2px;
+      &:last-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cartItem {
+  background-color: #fff;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+
+  >img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  >div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    > button{
+        color: white;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+            background-color: $primarydark;
+        }
+    }
+    p{
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+    }
+
+  }
+  >svg{
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: auto;
+
+    &:hover{
+        color: $secondry;
+    }
+  }
+}
