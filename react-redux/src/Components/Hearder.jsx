@@ -5,7 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 export const Hearder = () => {
   return (
     <nav>
-      <h2><Link to="/">Lgo Here</Link></h2>
+      <h2><Link to="/">Logo</Link></h2>
 
       <div>
         <Link to="/">Home</Link>
