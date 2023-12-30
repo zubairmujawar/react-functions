@@ -4,7 +4,8 @@ const Todo = () => {
   const [userInput, setUserInput] = useState("");
   const [date, setDate] = useState("");
   const [todos, setTodos] = useState([]);
-
+  
+// refrence KG codding 7h:45min
   const addTodo = () => {
     if (todos === "") {
       alert("Please Enter todos");
