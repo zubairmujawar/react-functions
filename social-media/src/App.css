@@ -7,24 +7,25 @@
 .container{
   width: 100vw;
   /* min-height: 100vh; */
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 .main-div{
   display: flex;
 
 }
 .nav{
-  max-width: 81vw;
+  max-width: 82vw;
 }
 .sidebar{
   height: 700px;
 }
 .secdiv{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   min-height: 90%;
+  align-items: center;
 }
 .card{
   border: 2px solid black;
@@ -38,13 +39,13 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 2rem;
 }
 .form{
-  width: 50%;
+  width: 70%;
   border: 2px solid black;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 .input{
   border: 1px solid blue;
