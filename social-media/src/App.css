@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
+.container{
+  width: 100vw;
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 0;
+}
+.main-div{
+  display: flex;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.nav{
+  max-width: 81vw;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sidebar{
+  height: 700px;
 }
+.secdiv{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 90%;
+}
+.card{
+  border: 2px solid black;
+  box-shadow: 18px -9px 14px 2px;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer{
+  color: white;
 }
-
-.card {
-  padding: 2em;
+.cardList{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
-
-.read-the-docs {
-  color: #888;
+.form{
+  width: 50%;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+.input{
+  border: 1px solid blue;
 }
