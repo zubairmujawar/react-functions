@@ -1,6 +1,6 @@
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import CardList from "./Components/CardList";
@@ -8,8 +8,7 @@ import CreatePost from "./Components/CreatePost";
 import PostListProvider from "./store/PostListStore";
 
 function App() {
-  // refrence KG codding
-
+  // reference KG codding
   const [aciveTab, setActivTab] = useState("Home");
 
   return (
