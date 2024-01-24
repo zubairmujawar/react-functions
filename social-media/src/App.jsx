@@ -5,14 +5,12 @@ import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import CardList from "./Components/CardList";
 import CreatePost from "./Components/CreatePost";
-import PostListProvider from "./store/PostListStore";
 
 function App() {
   // reference KG codding
   const [aciveTab, setActivTab] = useState("Home");
 
   return (
-    <PostListProvider>
     <div className="main-div">
       <Sidebar aciveTab={aciveTab} setActivTab={setActivTab}/>
       <div className="secdiv">
@@ -20,7 +18,6 @@ function App() {
         {aciveTab === "Home" ? <CardList /> : <CreatePost />}
       </div>
     </div>
-    </PostListProvider>
   );
 }
 

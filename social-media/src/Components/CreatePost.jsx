@@ -19,7 +19,7 @@ const CreatePost = () => {
       </div>
       <div className="mb-3">
         <label htmlFor="exampleInputPassword1" className="form-label">
-        Deception
+          Deception
         </label>
         <input
           type="text"
