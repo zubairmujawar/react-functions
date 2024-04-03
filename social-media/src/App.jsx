@@ -11,6 +11,7 @@ function App() {
   const [aciveTab, setActivTab] = useState("Home");
 
   return (
+    
     <div className="main-div">
       <Sidebar aciveTab={aciveTab} setActivTab={setActivTab}/>
       <div className="secdiv">
